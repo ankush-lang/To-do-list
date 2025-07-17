@@ -1,0 +1,97 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#taskList {
+  list-style-type: none;
+}
+
+#taskList li {
+  background: #eee;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#taskList li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.actions button:hover {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-section button {
+    width: 100%;
+  }
+}
